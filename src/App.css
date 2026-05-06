@@ -1,0 +1,196 @@
+.app {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  background: #ffffffd9;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e8e8ea;
+}
+
+.brand {
+  font-weight: 800;
+  color: #1b1d31;
+}
+
+.top-nav nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  color: #373d58;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top-nav button,
+.auth-box button,
+.course-card button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  background: #4f46e5;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  gap: 1.2rem;
+}
+
+section {
+  border: 1px solid #e8e8ea;
+  border-radius: 18px;
+  padding: 1.35rem;
+  background: #fff;
+}
+
+.hero-section h1 {
+  margin: 0.35rem 0;
+  min-height: 3.1rem;
+  color: #1b1d31;
+}
+
+.eyebrow {
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.auth-box {
+  margin-top: 1rem;
+}
+
+.auth-box div {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.auth-box input {
+  padding: 0.65rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #ced1dc;
+  min-width: 220px;
+}
+
+.logos {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.logos span,
+.track-list span {
+  background: #f5f7ff;
+  color: #333c65;
+  border: 1px solid #e0e5ff;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-weight: 700;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.8rem;
+}
+
+.course-card {
+  border: 1px solid #e8e8ea;
+  border-radius: 14px;
+  padding: 0.95rem;
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: #1b1d31;
+}
+
+.price-line {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #667085;
+}
+
+.offer-tag {
+  background: #fff5d8;
+  border: 1px solid #ffe196;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.82rem;
+}
+
+.timer {
+  font-weight: 700;
+  margin: 0.45rem 0;
+}
+
+.course-card ul,
+.details ul,
+.payment ol {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.note {
+  font-size: 0.88rem;
+  color: #565d77;
+}
+
+.green {
+  border-color: #b9f4c7;
+}
+
+.blue {
+  border-color: #bed5ff;
+}
+
+.purple {
+  border-color: #dec6ff;
+}
+
+.red {
+  border-color: #ffc5c5;
+}
+
+.track-list {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.tagline {
+  font-weight: 800;
+  margin-bottom: 0;
+  color: #31269b;
+}
+
+@media (max-width: 920px) {
+  .top-nav {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
